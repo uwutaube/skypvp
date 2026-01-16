@@ -2,7 +2,7 @@ plugins {
     java
 }
 
-group = "com.jamo"
+group = "com.zoo"
 version = "1.0.0"
 
 java {
@@ -19,11 +19,11 @@ repositories {
 dependencies {
     // Compile against the server API classes by using the server jar directly.
     // For real projects, you may want to publish an API artifact or use a deobfuscated SDK instead.
-    compileOnly(files("../../HytaleServer.jar"))
+    compileOnly(files("libs/HytaleServer.jar"))
 }
 
 tasks.jar {
-    archiveBaseName.set("jamo-hello-plugin")
+    archiveBaseName.set("skypvp")
     // Ensure manifest.json ends up at jar root (it lives in src/main/resources).
 }
 

@@ -1,4 +1,4 @@
-package com.jamo.hello;
+package com.zoo.hello;
 
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
@@ -11,7 +11,9 @@ public final class HelloCommand extends CommandBase {
 
     @Override
     protected void executeSync(CommandContext ctx) {
-        ctx.sendMessage(Message.raw("Hello!"));
+        String myName = "hello :D 2";
+
+        ctx.sendMessage(Message.raw(myName));
     }
 }
 

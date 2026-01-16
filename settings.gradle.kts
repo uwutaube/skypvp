@@ -1,2 +1,2 @@
-rootProject.name = "hello-plugin"
+rootProject.name = "skypvp"
 
